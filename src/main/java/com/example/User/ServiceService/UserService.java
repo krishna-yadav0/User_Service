@@ -8,16 +8,16 @@ import com.example.User.ServiceRepository.UserRepository;
 
 @Service
 public class UserService {
-	
+
 	@Autowired
-    private UserRepository userRepository;
+	private UserRepository userRepository;
 
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
-    }
+	public User findByUsername(String username) {
+		return userRepository.findByUsername(username);
+	}
 
-    public void saveUser(User user) {
-        userRepository.save(user);
-    }
+	public void saveUser(User user) {
+		userRepository.save(user);
+	}
 
 }
